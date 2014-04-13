@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Playercontrols.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MyGUI.cs">
     <Files>
-      <File FileName="Assets/Scripts/Playercontrols.cs" Line="48" Column="12" />
+      <File FileName="Assets/Scripts/MyGUI.cs" Line="26" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

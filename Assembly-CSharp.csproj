@@ -55,13 +55,12 @@
      <Compile Include="Assets\Scripts\MyGUI.cs" />
      <Compile Include="Assets\Scripts\Playercontrols.cs" />
      <Compile Include="Assets\Scripts\Playercontrols2.cs" />
+     <Compile Include="Assets\Scripts\Playerlives.cs" />
      <Compile Include="Assets\Scripts\ShootStar.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Remover.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Spawner.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />

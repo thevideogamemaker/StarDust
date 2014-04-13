@@ -14,6 +14,11 @@ public class Playercontrols : MonoBehaviour
 	public LayerMask whatIsGround;
 	public float jumpForce = 400f;
 	public int playerlives = 5;
+	public int Player_health = 100;
+
+	public GUIStyle HealthbarGUI;
+	public GUIStyle HeartlivesGUI;
+	public GUIStyle Pausebutton;
 
 	bool doubleJump = false;
 
@@ -67,6 +72,15 @@ public class Playercontrols : MonoBehaviour
 			Pause ();
 		}
 
+		if(Player_health > 100) 
+		{
+			Player_health = 10;
+		}
+		if(Player_health < 0)
+		{
+			Player_health = 0;
+		}
+
 }
 
 	void Flip()
@@ -103,17 +117,20 @@ public class Playercontrols : MonoBehaviour
 					Pause();
 					Debug.Log("Unpause button clicked");
 				}
-		}	
+		}
+
+		GUI.Box (new Rect (5, 5, Player_health, 15), "" + Player_health, HealthbarGUI);
+	
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.tag == "Enemy")
 		{
-			if(playerlives >= 1)
+			if(Player_health >= 1)
 			{
-				playerlives -= 1;
-				Debug.Log ("You have lost a life");
+				Player_health -= 10;
+				Debug.Log ("You have lost health");
 			}
 		}
 	}
