@@ -3,7 +3,9 @@ using System.Collections;
 
 public class Score : MonoBehaviour
 {
-	public int score = 0;					// The player's score.
+	public int score = 0;	// I was able to get the score to display. We still need to have it so that when the 
+				//player actually interacts withs something (Ex. Kills an enemy) then the score 
+				//updates by itself.
 
 
 	private PlayerControl playerControl;	// Reference to the player control script.
