@@ -46,17 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\DestroyStar.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\LoadLevel.cs" />
-     <Compile Include="Assets\Scripts\MoveStar.cs" />
-     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-     <Compile Include="Assets\Scripts\MyGUI.cs" />
-     <Compile Include="Assets\Scripts\Playercontrols.cs" />
-     <Compile Include="Assets\Scripts\Playercontrols2.cs" />
-     <Compile Include="Assets\Scripts\Playerlives.cs" />
-     <Compile Include="Assets\Scripts\ShootStar.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Cyclops.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Player\DestroyStar.cs" />
+     <Compile Include="Assets\Scripts\Player\FollowPlayer.cs" />
+     <Compile Include="Assets\Scripts\Player\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\Player\MoveStar.cs" />
+     <Compile Include="Assets\Scripts\Player\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Player\MyGUI.cs" />
+     <Compile Include="Assets\Scripts\Player\Playercontrols.cs" />
+     <Compile Include="Assets\Scripts\Player\Playercontrols2.cs" />
+     <Compile Include="Assets\Scripts\Player\Score.cs" />
+     <Compile Include="Assets\Scripts\Player\ShootStar.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\Tutorial Scripts\PlayerControl.cs" />
