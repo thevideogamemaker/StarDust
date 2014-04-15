@@ -15,9 +15,9 @@ public class DestroyStar : MonoBehaviour {
 
 	}
 
-	void OnColliderEnter2D(Collider2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.name == "W 1-1")
+		if(col.tag == "Enemy")
 		{
 			Destroy(Star);
 			Debug.Log("Destroyed");

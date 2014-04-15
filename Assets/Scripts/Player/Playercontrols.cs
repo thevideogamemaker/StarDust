@@ -81,6 +81,14 @@ public class Playercontrols : MonoBehaviour
 			Player_health = 0;
 		}
 
+		if(Player_health == 0)
+		{
+			if(playerlives >= 1)
+			{
+				playerlives = playerlives -1;
+				Debug.Log ("You lost a life");
+			}
+		}
 }
 
 	void Flip()
@@ -120,16 +128,17 @@ public class Playercontrols : MonoBehaviour
 		}
 
 		GUI.Box (new Rect (5, 5, Player_health, 15), "" + Player_health, HealthbarGUI);
+		GUI.Box (new Rect (5, 23, 16, 14), "     " + playerlives, HeartlivesGUI);
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnCollisionExit2D(Collision2D other)
 	{
-		if(other.tag == "Enemy")
+		if(other.gameObject.tag == "Enemy")
 		{
 			if(Player_health >= 1)
 			{
-				Player_health -= 10;
+				Player_health = Player_health -10;
 				Debug.Log ("You have lost health");
 			}
 		}

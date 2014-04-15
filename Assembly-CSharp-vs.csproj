@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Enemy\Cyclops.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Cyclopsscript.cs" />
      <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Player\DestroyStar.cs" />
      <Compile Include="Assets\Scripts\Player\FollowPlayer.cs" />
@@ -58,11 +58,6 @@
      <Compile Include="Assets\Scripts\Player\Playercontrols2.cs" />
      <Compile Include="Assets\Scripts\Player\Score.cs" />
      <Compile Include="Assets\Scripts\Player\ShootStar.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\Destroyer.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\Gun.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\Remover.cs" />
-     <Compile Include="Assets\Scripts\Tutorial Scripts\Spawner.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
