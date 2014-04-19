@@ -18,6 +18,7 @@ public class MoveStar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		//for some reason these two if statements aren't working. It should work by sayng that if facing right is true, then shoot it in the x position + 6 and when not facing right, he should shoot it -6, making it go the opposite way.
 		if (facingRight)
 		{
 			rigidbody2D.velocity = new Vector2 (6, 0);
