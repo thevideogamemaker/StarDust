@@ -7,10 +7,12 @@ public class Cyclopsscript : MonoBehaviour {
 	private Score score;
 
 	public GameObject Cyclops;
+	public GameObject Score;
+	public GameObject Enemyexplode;
 
 	// Use this for initialization
 	void Start () {
-		score = GameObject.Find ("Score").GetComponent<Score> ();
+		score = GameObject.Find ("Score").GetComponent <Score> ();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +21,8 @@ public class Cyclopsscript : MonoBehaviour {
 		if(HP < 1)
 		{
 			DestroyObject(Cyclops);
-			Score.score += 10;
+			score.score += 100;
+			Instantiate(Enemyexplode,transform.position, Quaternion.identity);
 		}
 
 	}
@@ -31,7 +34,6 @@ public class Cyclopsscript : MonoBehaviour {
 			if(HP >= 1)
 			{
 				HP -=1;
-				Debug.Log("Enemy lost a life");
 			}
 		}
 	}

@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemy\Bird1script.cs" />
      <Compile Include="Assets\Scripts\Enemy\Cyclopsscript.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Piranhascript.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Spikeballscript.cs" />
      <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Player\DestroyStar.cs" />
      <Compile Include="Assets\Scripts\Player\FollowPlayer.cs" />

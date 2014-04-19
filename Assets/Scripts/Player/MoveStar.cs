@@ -6,19 +6,26 @@ public class MoveStar : MonoBehaviour {
 
 	public Rigidbody2D Star;
 	public float StarSpeed = 6f;
-	public bool facingRight = true;
+
+	private Playercontrols facingRight;
 
 
 	// Use this for initialization
 	void Start () 
 	{
-		facingRight = GetComponent<Playercontrols>();
-
+		facingRight = GameObject.Find ("Player").GetComponent<Playercontrols> ();
 	}
 	// Update is called once per frame
 	void Update () 
 	{
-			rigidbody2D.velocity = new Vector2 (StarSpeed, 0);
+		if (facingRight)
+		{
+			rigidbody2D.velocity = new Vector2 (6, 0);
+		}
+		if (facingRight == false)
+		{
+			rigidbody2D.velocity = new Vector2 (-6, 0);
+		}
 	}
 
 	void OnColliderEnter2D(Rigidbody2D other)

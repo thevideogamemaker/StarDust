@@ -74,7 +74,7 @@ public class Playercontrols : MonoBehaviour
 
 		if(Player_health > 100) 
 		{
-			Player_health = 10;
+			Player_health = 100;
 		}
 		if(Player_health < 0)
 		{
@@ -131,16 +131,5 @@ public class Playercontrols : MonoBehaviour
 		GUI.Box (new Rect (5, 23, 16, 14), "     " + playerlives, HeartlivesGUI);
 	
 	}
-
-	void OnCollisionExit2D(Collision2D other)
-	{
-		if(other.gameObject.tag == "Enemy")
-		{
-			if(Player_health >= 1)
-			{
-				Player_health = Player_health -10;
-				Debug.Log ("You have lost health");
-			}
-		}
-	}
+	
 }

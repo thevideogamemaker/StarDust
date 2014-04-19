@@ -5,6 +5,7 @@ public class DestroyStar : MonoBehaviour {
 
 	public GameObject Star;
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -20,7 +21,10 @@ public class DestroyStar : MonoBehaviour {
 		if(col.tag == "Enemy")
 		{
 			Destroy(Star);
-			Debug.Log("Destroyed");
+		}
+		if(col.tag == "World")
+		{
+			Destroy(Star);
 		}
 	}
 
