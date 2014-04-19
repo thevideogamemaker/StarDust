@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MovingPlatform : MonoBehaviour 
 {
+	//This whole thing might need to be re-written. It should be a waypoints system that can be used for moving platforms and enemy AI.
+	
 	public Transform DestinationSpot;
 	public Transform OriginSpot;
 	public float Speed;
