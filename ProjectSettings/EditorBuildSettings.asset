@@ -10,9 +10,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Menu/Main Menu.unity
   - enabled: 1
+    path: Assets/Levels/Menu/Level Select.unity
+  - enabled: 1
     path: Assets/Levels/Menu/How to Play.unity
   - enabled: 1
     path: Assets/Levels/Menu/Settings.unity
+  - enabled: 1
+    path: Assets/Levels/Menu/World 1.unity
   - enabled: 1
     path: Assets/Levels/World 1/W 1-1.unity
   - enabled: 1

@@ -24,7 +24,7 @@ public class MyGUI : MonoBehaviour {
 		//make a button. Be able to click the button. If clicked, return inventory screen.
 
 		if (GUI.Button(new Rect(250,80,80,25), "Play Game")) {
-			Application.LoadLevel("W 1-1");	
+			Application.LoadLevel("Level Select");	
 		}
 
 		if (GUI.Button(new Rect(250,115,80,25), "Settings")) {

@@ -1105,6 +1105,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999995291
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 607aa6746b86e44988121a0093192a21, type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 100006, guid: 607aa6746b86e44988121a0093192a21, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 607aa6746b86e44988121a0093192a21, type: 2}
   m_RootGameObject: {fileID: 1605933417}
@@ -2039,6 +2043,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 571992878}
+  - 114: {fileID: 571992879}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -2057,6 +2062,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &571992879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571992877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7e19a236ced402888b3e88a0a19ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dead: 0
+  Player: {fileID: 100006, guid: 607aa6746b86e44988121a0093192a21, type: 2}
+  Spawnpoint: {fileID: 571992877}
 --- !u!1 &581013990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,7 +3462,6 @@ GameObject:
   - 212: {fileID: 717902996}
   - 114: {fileID: 717902998}
   - 60: {fileID: 717902999}
-  - 114: {fileID: 717903000}
   - 50: {fileID: 717903001}
   m_Layer: 0
   m_Name: Spikeball
@@ -3710,23 +3728,6 @@ PolygonCollider2D:
       - {x: .375, y: -3.375}
       - {x: .625, y: -3.07500005}
       - {x: .912500024, y: -2.76250005}
---- !u!114 &717903000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 717902995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1ca0e8830f543f2b0c4b58d1321cb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xpos: 0
-  Ypos: 0
-  max: 0
-  min: 0
-  Vert: 0
-  step: .5
 --- !u!50 &717903001
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6604,6 +6605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 6
   facingRight: 1
+  Player: {fileID: 100006, guid: 607aa6746b86e44988121a0093192a21, type: 2}
   grounded: 0
   groundCheck: {fileID: 1644329338}
   whatIsGround:

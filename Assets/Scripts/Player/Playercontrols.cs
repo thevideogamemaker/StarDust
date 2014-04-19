@@ -5,6 +5,7 @@ public class Playercontrols : MonoBehaviour
 {
 	public float maxSpeed = 10f;
 	public bool facingRight = true;
+	public GameObject Player;
 
 	Animator anim;
 
@@ -21,7 +22,6 @@ public class Playercontrols : MonoBehaviour
 	public GUIStyle Pausebutton;
 
 	bool doubleJump = false;
-
 
 	private bool isPaused;
 	
@@ -86,6 +86,7 @@ public class Playercontrols : MonoBehaviour
 			if(playerlives >= 1)
 			{
 				playerlives = playerlives -1;
+				DestroyObject(Player);
 				Debug.Log ("You lost a life");
 			}
 		}
@@ -130,6 +131,12 @@ public class Playercontrols : MonoBehaviour
 		GUI.Box (new Rect (5, 5, Player_health, 15), "" + Player_health, HealthbarGUI);
 		GUI.Box (new Rect (5, 23, 16, 14), "     " + playerlives, HeartlivesGUI);
 	
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.name == "Outside of Map")
+			Player_health = 0;
 	}
 	
 }

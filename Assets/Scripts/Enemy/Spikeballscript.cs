@@ -9,8 +9,7 @@ public class Spikeballscript : MonoBehaviour {
 	public GameObject Spikeball;
 	public GameObject Score;
 	public GameObject Enemyexplode;
-	
-	
+
 	// Use this for initialization
 	void Start () {
 		score = GameObject.Find ("Score").GetComponent <Score> ();
